@@ -22,9 +22,131 @@ a{
     font-weight: bold;
 }
 
+body{
+    padding: 10px 100px;
+}
 
 
 /* HEADER */
+
+header{
+    background-color: rgb(255, 114, 20);
+    border-radius: 20px 20px 0px 0px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secciones_header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.ul_header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ir_form{
+    justify-content: end;
+}
+
+.ul_ir_form{
+    padding-right: 40px;
+}
+
+#logo{
+    width: 80px;
+}
+
+.a_header{
+    color: white;
+}
+
+
+
+/* GENERAL DE MAIN */
+
+main{
+    background-color: #F7F5F2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion_cuerpo{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 150px;
+}
+
+.article_productos{
+    height: 450px;
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.titulo{
+    width: 100%;
+}
+
+h2{
+    font-weight: bolder;
+    color: #2F393B;    
+}
+
+h4{
+    font-weight: bolder;
+    color: #2F393B;
+}
+
+.precio{
+    color: rgb(255, 114, 20);
+    font-weight: bold;
+}
+
+.descrip_prod{
+    text-align: center;
+}
+
+.verDetalle{
+    color: white;
+    background-color: rgb(255, 114, 20);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.img_detalle{
+    width: 350px;
+}
+
+.seccion_todos_productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion_productos_destacados{
+    width: 100%;
+}
+
+
+
+
 
 
 
@@ -32,14 +154,42 @@ a{
 
 /* ASIDE */
 
+#categorias{
+    margin-top: 0px;
+    font-weight: bolder;
+    color: #2F393B;
+}
 
+aside{
+    padding: 20px;
+    width: 30%;
+}
 
+.a_aside{
+    color: rgb(255, 114, 20);
+    font-weight: normal;
+}
 
-
-/* RESTO DE MAIN */
-
-
+.li_aside{
+    margin-bottom: 10px;
+}
 
 
 
 /* FOOTER */
+
+footer{
+    background-color: #2F393B;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.seccion_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.p_footer{
+    color: white;
+    font-weight: bold;
+}
