@@ -24,13 +24,14 @@ a{
 
 body{
     padding: 10px 100px;
+    background-color: rgb(241, 241, 230);
 }
 
 
 /* HEADER */
 
 header{
-    background-color: rgb(255, 114, 20);
+    background-color: rgb(161, 148, 140);
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -70,9 +71,7 @@ nav{
 
 
 
-            /* GENERAL DE MAIN */
-
-/* GENERAL/INDEX/CATEGORY */
+/* GENERAL DE MAIN */
 
 main{
     background-color: #F7F5F2;
@@ -122,7 +121,7 @@ h4{
 }
 
 .precio{
-    color: rgb(255, 114, 20);
+    color:  rgb(0, 0, 0);;
     font-weight: bold;
 }
 
@@ -132,15 +131,13 @@ h4{
 
 .verDetalle{
     color: white;
-    background-color: rgb(255, 114, 20);
+    background-color:  rgb(169, 177, 160);;
     padding: 10px;
     border-radius: 5px;
 }
 
 
 
-
-/* PRODUCT */
 
 .img_detalle{
     width: 350px;
@@ -194,28 +191,10 @@ h3{
     background-color: white;
     border-radius: 15px;
     padding: 15px;
-    height: 282px;
+    height: 220px;
     margin-bottom: 20px;
-    
 
 }
-
-
-
-
-
-/* REGISTER */
-
-
-
-
-
-
-
-/* LOGIN */
-
-
-
 
 
 
@@ -234,10 +213,11 @@ h3{
 aside{
     padding: 20px;
     width: 30%;
+    background-color: rgb(255, 255, 255);
 }
 
 .a_aside{
-    color: rgb(255, 114, 20);
+    color: rgb(51, 51, 51);
     font-weight: normal;
 }
 
@@ -250,7 +230,7 @@ aside{
 /* FOOTER */
 
 footer{
-    background-color: #2F393B;
+    background-color:rgb(161, 148, 140);
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -266,36 +246,25 @@ footer{
 }
 
 
+/* GENERAL DE LOGIN */
 
-
-
-
-@media (max-width:800px) {
-    
+.seccionlogin {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  width: 50%;
 }
 
-
-@media (max-width: 320px) {
-    
+.fondologin{
+  border: 2px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  background-color: rgb(169, 177, 160);
+  line-height: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.boton{
+    color: #ffffff;
+}
