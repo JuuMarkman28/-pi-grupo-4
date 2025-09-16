@@ -70,7 +70,9 @@ nav{
 
 
 
-/* GENERAL DE MAIN */
+            /* GENERAL DE MAIN */
+
+/* GENERAL/INDEX/CATEGORY */
 
 main{
     background-color: #F7F5F2;
@@ -80,7 +82,8 @@ main{
 
 .seccion_cuerpo{
     width: 70%;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .seccion_gral_productos{
@@ -137,6 +140,8 @@ h4{
 
 
 
+/* PRODUCT */
+
 .img_detalle{
     width: 350px;
 }
@@ -189,10 +194,28 @@ h3{
     background-color: white;
     border-radius: 15px;
     padding: 15px;
-    height: 220px;
+    height: 282px;
     margin-bottom: 20px;
+    
 
 }
+
+
+
+
+
+/* REGISTER */
+
+
+
+
+
+
+
+/* LOGIN */
+
+
+
 
 
 
@@ -241,3 +264,36 @@ footer{
     color: white;
     font-weight: bold;
 }
+
+
+
+
+
+
+@media (max-width:800px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
