@@ -80,8 +80,14 @@ main{
 
 .seccion_cuerpo{
     width: 70%;
+    
+}
+
+.seccion_gral_productos{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 img{
