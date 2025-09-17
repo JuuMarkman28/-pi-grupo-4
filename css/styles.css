@@ -295,6 +295,16 @@ footer{
     color: #ffffff;
 }
 
+button{
+    color: white;
+    background-color:  rgb(51, 51, 51);
+    border-radius: 5px;
+}
+
+.input{
+    width: 100%;
+}
+
 
 /* Estilos para Tablet 768px*/
 
