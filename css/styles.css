@@ -229,6 +229,7 @@ aside{
     padding: 2.03%;
     width: 30%;
     background-color: rgb(255, 255, 255);
+    height: 850px;
 }
 
 .a_aside{
@@ -274,10 +275,11 @@ footer{
 
 .seccionlogin {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column; 
   align-items: center;    
   justify-content: center; 
-  width: 50%;
+  width: 70%;
 }
 
 .fondologin{
