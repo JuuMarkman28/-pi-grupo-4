@@ -94,21 +94,22 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 7.26%;
+    margin-bottom: 30px;
 }
 
 img{
-    width: 59.2%;
+    width: 150px;
 }
 
 .article_productos{
     height: 450px;
-    width: 50%;
+    width: 270px;
     display: flex;
     flex-direction: column; 
     align-items: center;    
     padding-left: 3.80%;
     padding-right: 3.80%;
+    margin: 0px 6px;
 }
 
 .titulo{
@@ -128,6 +129,7 @@ h4{
     color: #2F393B;
     margin-top: 7.80%;
     margin-bottom: 7.80%;
+    text-align: center;
 }
 
 .precio{
@@ -178,6 +180,7 @@ h4{
 .art_subt{
     display: flex;
     flex-wrap: wrap;
+    margin: 0px 20px;
 }
 
 .art_desc_product{
@@ -213,9 +216,6 @@ h3{
 
 
 
-
-
-
 /* ASIDE */
 
 #categorias{
@@ -229,7 +229,7 @@ aside{
     padding: 2.03%;
     width: 30%;
     background-color: rgb(255, 255, 255);
-    height: 850px;
+    height: 880px;
 }
 
 .a_aside{
@@ -280,6 +280,7 @@ footer{
   align-items: center;    
   justify-content: center; 
   width: 70%;
+  height: 500px;
 }
 
 .fondologin{
@@ -309,7 +310,18 @@ button{
 /* Estilos para Tablet 768px*/
 
 @media (max-width:768px) {
+    .article_productos{
+        width: 100%;
+    }
 
+    .secciones_header{
+        width: 40%;
+    }
+
+    .art_comentarios{
+        width: 45%;
+        height: 260px;
+    }
 
 
 }
@@ -318,7 +330,17 @@ button{
 /* Estilos para Celular 420px*/
 
 @media (max-width:420px) {
+    body{
+        padding: 10px ;
+    }
 
+    aside{
+        width: 100%;
+    }
+
+    .seccion_cuerpo{
+        width: 100%;
+    }
 
     
 }
