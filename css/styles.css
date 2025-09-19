@@ -105,15 +105,30 @@ img{
     width: 150px;
 }
 
-.article_productos{
-    height: 450px;
-    width: 270px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    padding-left: 3.80%;
-    padding-right: 3.80%;
-    margin: 0px 6px;
+@media (min-width: 986px){
+    .article_productos{
+        height: 450px;
+        width: 270px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        padding-left: 3.80%;
+        padding-right: 3.80%;
+        margin: 0px 6px;
+}
+}
+
+@media (max-width: 985px){
+    .article_productos{
+        height: 450px;
+        width: 270px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        padding-left: 3.80%;
+        padding-right: 3.80%;
+        margin: 0px 1.11% 0px 24.09%;
+}
 }
 
 .titulo{
