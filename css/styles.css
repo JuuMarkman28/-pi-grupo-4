@@ -74,6 +74,10 @@ nav{
     color: white;
 }
 
+.buscar{
+    margin-left: 20px;
+}
+
 
 
 /* GENERAL DE MAIN */
@@ -148,8 +152,11 @@ h4{
 .verDetalle{
     color: white;
     background-color:  rgb(169, 177, 160);;
-    padding: 3.70%;
     border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
 }
 
 
@@ -315,7 +322,7 @@ button{
     }
 
     .secciones_header{
-        width: 40%;
+        width: 50%;
     }
 
     .art_comentarios{
@@ -340,6 +347,10 @@ button{
 
     .seccion_cuerpo{
         width: 100%;
+    }
+
+    aside{
+        order: 2;
     }
 
     
