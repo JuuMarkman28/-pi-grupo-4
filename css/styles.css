@@ -46,16 +46,16 @@ nav{
 .secciones_header{
     display: flex;
     flex-wrap: wrap;
-    width: 35%;
+    width: 40%;
 }
 
 .ul_header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 7.53%;
-    margin-bottom: 7.53%;
-    padding-left: 18.75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
 }
 
 .ir_form{
@@ -92,10 +92,11 @@ main{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .seccion_gral_productos{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
@@ -105,30 +106,15 @@ img{
     width: 150px;
 }
 
-@media (min-width: 986px){
-    .article_productos{
-        height: 450px;
-        width: 270px;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        padding-left: 3.80%;
-        padding-right: 3.80%;
-        margin: 0px 6px;
-}
-}
-
-@media (max-width: 985px){
-    .article_productos{
-        height: 450px;
-        width: 270px;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        padding-left: 3.80%;
-        padding-right: 3.80%;
-        margin: 0px 1.11% 0px 24.09%;
-}
+.article_productos{
+    height: 450px;
+    width: 270px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding-left: 3.80%;
+    padding-right: 3.80%;
+    margin: 0px 6px;
 }
 
 .titulo{
@@ -173,8 +159,6 @@ h4{
     border: none;
     padding: 10px;
 }
-
-
 
 
 .img_detalle{
@@ -235,9 +219,6 @@ h3{
 
 }
 
-
-
-
 /* ASIDE */
 
 #categorias{
@@ -251,7 +232,6 @@ aside{
     padding: 2.03%;
     width: 30%;
     background-color: rgb(255, 255, 255);
-    height: 880px;
 }
 
 .a_aside{
@@ -270,7 +250,6 @@ aside{
     margin-top: 6.5%;
     margin-bottom: 6.5%;
 }
-
 
 /* FOOTER */
 
@@ -329,15 +308,15 @@ button{
 }
 
 
-/* Estilos para Tablet 768px*/
+/* Estilos para Tablet 820px*/
 
-@media (max-width:768px) {
-    .article_productos{
-        width: 100%;
+@media (max-width:820px) {
+    .seccion_gral_productos{
+        justify-content: center;
     }
 
-    .secciones_header{
-        width: 50%;
+    .seccion_cuerpo{
+        justify-content: center;
     }
 
     .art_comentarios{
@@ -345,6 +324,18 @@ button{
         height: 260px;
     }
 
+    .img_detalle{
+        width: 200px;
+    }
+
+    .ul_header{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .secciones_header{
+        width: 100%;
+    }
 
 }
 
@@ -354,6 +345,10 @@ button{
 @media (max-width:420px) {
     body{
         padding: 10px ;
+    }
+
+    #logo{
+        width: 50px;
     }
 
     aside{
@@ -368,5 +363,7 @@ button{
         order: 2;
     }
 
-    
+    .seccionlogin{
+        width: 100%;
+    }
 }
