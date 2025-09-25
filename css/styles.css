@@ -124,30 +124,30 @@ img{
 h2{
     font-weight: bold;
     color: #2F393B; 
-    margin-top: 3%;
-    margin-bottom: 3%;  
+    margin-top: 20px;
+    margin-bottom: 20px;  
     margin-left: 3%; 
 }
 
 h4{
     font-weight: bold;
     color: #2F393B;
-    margin-top: 7.80%;
-    margin-bottom: 7.80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .precio{
     color:  rgb(0, 0, 0);;
     font-weight: bold;
-    margin-bottom: 5.95%;
-    margin-top: 5.95%;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .descrip_prod{
     text-align: center;
-    margin-bottom: 5.95%;
-    margin-top: 5.95%;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .verDetalle{
@@ -208,8 +208,8 @@ h3{
     font-weight: bold;
     color: #2F393B;
     font-size: 22px;
-    margin-top: 3%;
-    margin-bottom: 3%;  
+    margin-top: 20px;
+    margin-bottom: 20px;  
     margin-left: 3%; 
 }
 
@@ -229,7 +229,7 @@ h3{
     margin-top: 0px;
     font-weight: bolder;
     color: #2F393B;
-    margin-bottom: 7.5%;
+    margin-bottom: 27px;
 }
 
 aside{
@@ -244,15 +244,15 @@ aside{
 }
 
 .li_aside{
-    margin-bottom: 3.92%;
+    margin-bottom: 14px;
     margin-left: 2.45%;
     margin-right: 2.45%;
 }
 
 .ulAside{
     padding-left: 16.2%;
-    margin-top: 6.5%;
-    margin-bottom: 6.5%;
+    margin-top: 23px;
+    margin-bottom: 23px;
 }
 
 /* FOOTER */
@@ -271,8 +271,8 @@ footer{
 .p_footer{
     color: white;
     font-weight: bold;
-    margin-top: 1.77%;
-    margin-bottom: 1.77%;
+    margin-top: 21px;
+    margin-bottom: 21px;
 }
 
 
@@ -335,6 +335,7 @@ button{
     .ul_header{
         margin-bottom: 20px;
         margin-top: 10px;
+        padding-left: 10px;
     }
 
     .secciones_header{
@@ -369,5 +370,10 @@ button{
 
     .seccionlogin{
         width: 100%;
+    }
+
+    .p_footer{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
