@@ -43,10 +43,16 @@ nav{
     justify-content: space-between;
 }
 
-.secciones_header{
+.secciones_header_derecha{
     display: flex;
     flex-wrap: wrap;
     width: 40%;
+}
+
+.secciones_header_izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
 }
 
 .ul_header{
@@ -338,16 +344,22 @@ button{
         padding-left: 10px;
     }
 
-    .secciones_header{
+    .secciones_header_izquierda{
         width: 100%;
     }
+
+    .secciones_header_derecha{
+        width: 100%;
+    }
+
+   
 
 }
 
 
-/* Estilos para Celular 420px*/
+/* Estilos para Celular 600px*/
 
-@media (max-width:420px) {
+@media (max-width:600px) {
     body{
         padding: 10px ;
     }
