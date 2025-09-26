@@ -82,6 +82,7 @@ nav{
 
 .buscar{
     margin-left: 20px;
+    border-radius: 5px;
 }
 
 
@@ -388,4 +389,5 @@ button{
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
 }
