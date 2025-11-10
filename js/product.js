@@ -1,15 +1,15 @@
 let qs = location.search
 
 let qsObj = new URLSearchParams(qs)
-console.log(qsObj)
-
 
 let idBuscado = qsObj.get("idProduct")
 
 let URL = `https://dummyjson.com/products/${idBuscado}`;
 
 
-let seccion = document.querySelector(".seccion_cuerpo");
+let seccion1 = document.querySelector(".seccion_detalle");
+
+let seccion2 = document.querySelector(".seccion_comentarios")
 
 
 fetch(URL)
@@ -18,10 +18,14 @@ fetch(URL)
     })
     .then(function (data) {
 
-        let contenido = ""
+        let contenido1 = ""
         const element = data
+//EDITAR LA LINEA 25, CON ${ELEMENT.ALGO}
+        contenido1 += `<article class="titulo">
+                    <h2></h2> 
+                </article>
 
-        contenido += `<article class="titulo img_product">
+                <article class="titulo img_product">
                     <img class="img_detalle" src="${element.images[0]}" alt="galletitas">
                 </article>
 
@@ -56,7 +60,10 @@ fetch(URL)
                 </article>`
 
 
-        seccion.innerHTML += contenido
+        seccion1.innerHTML += contenido1
+
+        let contenido2 = ""
+
 
     })
     .catch(function (error) {
