@@ -20,9 +20,9 @@ fetch(URL)
 
         let contenido1 = ""
         const element = data
-//EDITAR LA LINEA 25, CON ${ELEMENT.ALGO}
+
         contenido1 += `<article class="titulo">
-                    <h2></h2> 
+                    <h2>${element.title}</h2> 
                 </article>
 
                 <article class="titulo img_product">
@@ -63,6 +63,21 @@ fetch(URL)
         seccion1.innerHTML += contenido1
 
         let contenido2 = ""
+
+
+        for (i = 0; i < data.reviews.length; i++) {
+            const elemento2 = element.reviews[i]
+// linea 74 consultar con profes 
+// qué hacemos con las estrellas de los comentarios? if?
+            contenido2 += `<article class="art_comentarios">
+                    <p>${elemento2.rating}</p>
+                    <p>${elemento2.comment}</p>
+                    <p>${elemento2.date.slice(0,10)}</p> 
+                    <p>${elemento2.reviewerName}</p>
+                </article>`
+        }
+
+        seccion2.innerHTML += contenido2
 
 
     })
