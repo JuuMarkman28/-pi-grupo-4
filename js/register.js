@@ -1,7 +1,7 @@
 let mail = document.querySelector(".textoregister")
 let contrasenia = document.querySelector(".textocontraseña") 
 let texto = document.querySelector(".textooculto") 
-let formulario = document.querySelector(".formularioLogin")
+let formulario = document.querySelector(".formularioRegistro")
 let contrasenia2 = document.querySelector(".textocontraseña2")
 
 formulario.addEventListener("submit", function (e) {

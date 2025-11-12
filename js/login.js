@@ -12,10 +12,10 @@ formulario.addEventListener("submit", function (e) {
     if (longitudMail == 0) {
         alert("Rellenar el campo de email, por favor")
         
-    } else if (contrasenia == 0) {
+    } else if (longitudContrasenia == 0) {
         alert("Rellenar el campo de contraseña, por favor")
 
-    } else if (longitudContrasenia < 6){
+    } else if ( 0 < longitudContrasenia && longitudContrasenia < 6){
          texto.innerText = "La contraseña debe tener al menos 6 caracteres"
          span.style.display = "block"
           
