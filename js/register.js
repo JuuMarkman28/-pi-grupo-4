@@ -22,7 +22,7 @@ formulario.addEventListener("submit", function (e) {
             
             texto_oculto.style.display = "block"
 
-        } else if (contrasenia !== contrasenia2) {
+        } else if (contrasenia.value !== contrasenia2.value) {
             texto_oculto.style.display = "none"
             texto_oculto2.style.display = "block"
 
