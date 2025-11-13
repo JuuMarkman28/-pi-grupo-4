@@ -67,12 +67,18 @@ fetch(URL)
 
         for (i = 0; i < data.reviews.length; i++) {
             const elemento2 = element.reviews[i]
-// linea 74 consultar con profes 
-// qué hacemos con las estrellas de los comentarios? if?
+            // linea 74 consultar con profes 
+            // qué hacemos con las estrellas de los comentarios? if?
+
+            let estrellitas = ""
+            for (let i = 0; i < elemento2.rating; i++) {
+                estrellitas += "⭐"
+            }
+
             contenido2 += `<article class="art_comentarios">
-                    <p>${elemento2.rating}</p>
+                    <p>${estrellitas}</p>
                     <p>${elemento2.comment}</p>
-                    <p>${elemento2.date.slice(0,10)}</p> 
+                    <p>${elemento2.date.slice(0, 10)}</p> 
                     <p>${elemento2.reviewerName}</p>
                 </article>`
         }

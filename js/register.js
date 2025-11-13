@@ -1,6 +1,7 @@
 let mail = document.querySelector(".textoregister")
-let contrasenia = document.querySelector(".textocontraseña") 
-let texto = document.querySelector(".textooculto") 
+let contrasenia = document.querySelector(".textocontraseña")
+let texto_oculto = document.querySelector(".textooculto")
+let texto_oculto2 = document.querySelector(".textooculto2")
 let formulario = document.querySelector(".formularioRegistro")
 let contrasenia2 = document.querySelector(".textocontraseña2")
 
@@ -12,20 +13,23 @@ formulario.addEventListener("submit", function (e) {
 
     if (longitudMail == 0) {
         alert("Rellenar el campo de email, por favor")
-        
-    } else if (contrasenia == 0) {
-        alert("Rellenar el campo de contraseña, por favor")
 
-    } else if (longitudContrasenia < 6){
-         texto.innerText = "La contraseña debe tener al menos 6 caracteres"
-         span.style.display = "block"
-          
-    } else if (longitudContrasenia > 6 && longitudMail != 0 && contrasenia != 0){
-        formulario.submit()
-          
-    } else if (contrasenia != contrasenia2){
-        texto.innerText = "Las contraseñas no coinciden"
-         span.style.display = "block"
-          
+    } else {
+        if (longitudContrasenia == 0) {
+            alert("Rellenar el campo de contraseña, por favor")
+
+        } else if (0 < longitudContrasenia && longitudContrasenia < 6) {
+            
+            texto_oculto.style.display = "block"
+
+        } else if (contrasenia !== contrasenia2) {
+            texto_oculto.style.display = "none"
+            texto_oculto2.style.display = "block"
+
+        } else {
+            formulario.submit()
+        }
     }
+
+
 })

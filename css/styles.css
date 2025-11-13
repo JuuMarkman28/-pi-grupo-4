@@ -289,20 +289,17 @@ footer{
 .seccionlogin {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; 
   align-items: center;    
   justify-content: center; 
   width: 70%;
-  height: 500px;
+  height: 800px;
 }
 
 .fondologin{
   border: 2px solid #ddd; 
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 40px;
   background-color: rgb(169, 177, 160);
-  line-height: 30px;
 }
 
 .boton{
@@ -315,8 +312,35 @@ button{
     border-radius: 5px;
 }
 
-.input{
+div{
     width: 100%;
+}
+
+input{
+    width: 100%;
+}
+
+.textooculto{
+    display: none;
+}
+
+.textooculto2{
+    display: none;
+}
+
+#acepto{
+    width: auto;
+}
+
+.pOculto{
+    color: red;
+}
+
+
+/* Buscador */
+
+.buscar{
+    width: auto;
 }
 
 
