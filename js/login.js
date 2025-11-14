@@ -21,6 +21,15 @@ formulario.addEventListener("submit", function (e) {
             texto_oculto.style.display = "block"
 
         } else {
+
+            let userObj= {
+                email: mail.value
+            }
+
+            let userString = JSON.stringify(userObj)
+
+            sessionStorage.setItem("data", userString);
+
             formulario.submit()
         }
     }
