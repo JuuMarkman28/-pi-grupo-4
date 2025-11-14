@@ -55,7 +55,7 @@ fetch(URL2)
                     <img src="${element.images[0]}" alt="sabanas">
                     <p class="descrip_prod">${element.description}</p>
                     <p class="precio">$ ${element.price}</p>
-                    <a class="verDetalle" href="./product.html">Ver detalle</a>
+                    <a class="verDetalle" href="./product.html?idProduct=${element.id}">Ver detalle</a>
                 </article>`
     }
 
