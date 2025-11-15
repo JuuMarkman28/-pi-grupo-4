@@ -85,7 +85,13 @@ nav{
     border-radius: 5px;
 }
 
+.logout a{
+    color: white;
+}
 
+.logout{
+    color: #ffffff;
+}
 
 /* GENERAL DE MAIN */
 
