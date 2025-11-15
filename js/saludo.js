@@ -1,4 +1,4 @@
-let data = sessionStorage.getItem("data")
+let data = localStorage.getItem("data")
 
 let dataObj = JSON.parse(data)
 
@@ -15,7 +15,7 @@ lista.innerHTML = `<li class= "logout"><a href="./login.html">Logout</a></li>`;
 
 let logout = document.querySelector(".logout")
 logout.addEventListener("click", function(){
-    sessionStorage.removeItem("data")
+    localStorage.removeItem("data")
 })
 
 } else {
