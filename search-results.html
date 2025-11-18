@@ -25,20 +25,25 @@
 
                 <ul class="ul_header">
                     <li> <a href="./index.html"> <img id="logo" src="./img/logo.png" alt="Logo"></a></li>
+                    <li><a class="a_header" href="./index.html">Home</a></li>
                 </ul>
 
-                <form class="ul_header formularionav" action="./search.html" method="get">
+                <form class="ul_header formularionav" action="./search-results.html" method="get">
                     <input class="buscar" placeholder="Buscar..." type="search" name="buscar" id="buscar">
                     <button type="submit">Buscar</button>
-                </form>
+                            
+                </form>
 
             </section>
 
             <section class="secciones_header_derecha ir_form">
 
-                <ul class="ul_header ul_ir_form">
+                <ul class="ul_header ul_ir_form ul_cambiada">
                     <li><a class="a_header" href="./login.html"> Login</a></li>
                     <li><a class="a_header" href="./register.html"> Registrate</a></li>
+                </ul>
+                <ul class="ul_header ul_ir_form ul_oculta">
+                    <li class="saludo a_header"></li>
                 </ul>
 
             </section>
@@ -54,16 +59,18 @@
             <section>
                 <h3 id="categorias">Categorias</h3>
                 <ul class="ul_categorias">
-                    
+
                 </ul>
             </section>
         </aside>
 
-        <section class="seccion_cuerpo">
-            
-        </section>
+        <section class="seccion_cuerpo_search">
 
             
+
+        </section>
+
+
     </main>
 
     <footer>
@@ -79,6 +86,8 @@
     <script src="./js/vallidar_buscador.js"></script>
     <script src="./js/search-results.js"></script>
     <script src="./js/categorias.js"></script>
+    <script src="./js/saludo.js"></script>
+    <script src="./js/logout.js"></script>
 </body>
 
 </html>

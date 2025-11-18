@@ -78,7 +78,7 @@ fetch(URL)
             contenido2 += `<article class="art_comentarios">
                     <p>${estrellitas}</p>
                     <p>${elemento2.comment}</p>
-                    <p>${elemento2.date.slice(0, 10)}</p> 
+                    <p>${elemento2.date}</p> 
                     <p>${elemento2.reviewerName}</p>
                 </article>`
         }

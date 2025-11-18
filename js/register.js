@@ -18,7 +18,18 @@ formulario.addEventListener("submit", function (e) {
         if (longitudContrasenia == 0) {
             alert("Rellenar el campo de contraseña, por favor")
 
-        } else if (0 < longitudContrasenia && longitudContrasenia < 6) {
+        } else if (longitudContrasenia >= 6 && contrasenia.value === contrasenia2.value){
+            formulario.submit()
+        }
+    }
+
+
+})
+
+formulario.addEventListener("input", function (e) {
+    let longitudContrasenia = contrasenia.value.length
+    
+    if (0 < longitudContrasenia && longitudContrasenia < 6) {
             
             texto_oculto.style.display = "block"
 
@@ -26,10 +37,8 @@ formulario.addEventListener("submit", function (e) {
             texto_oculto.style.display = "none"
             texto_oculto2.style.display = "block"
 
-        } else {
-            formulario.submit()
+        } else{
+            texto_oculto2.style.display = "none"
         }
-    }
-
-
+    
 })

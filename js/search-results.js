@@ -3,9 +3,10 @@ let qsObj = new URLSearchParams(qs)
 
 let idBuscado = qsObj.get("buscar")
 let palabraBuscadoForm = qsObj.get("buscar")
-let seccion = document.querySelector(".seccion-cuerpo");
+let seccion_productos = document.querySelector(".seccion_cuerpo_search")
 
-let URL = `https://dummyjson.com/products/?name=${palabraBuscadoForm}`;
+
+let URL = `https://dummyjson.com/products/search?q=${palabraBuscadoForm}`;
 
 fetch(URL)
 
@@ -14,9 +15,14 @@ fetch(URL)
     })
 
     .then(function (data) {
+        console.log(data);
 
         let contenido = ""
-    
+
+        contenido += `<article class="titulo">
+                <h2>Resultados de búsqueda para: ${palabraBuscadoForm}</h2>
+            </article>`
+
         if (data.products.length >= 1) {
             for (let i = 0; i < data.products.length; i++) {
                 const element = data.products[i]
@@ -30,16 +36,23 @@ fetch(URL)
                 </article>`
 
             }
+
+
+
+            seccion_productos.innerHTML = contenido
+
         } else {
-            
-            contenido += `
-        <article>
-            <p>No hay resultados para el término: ${palabraBuscadoForm}</p>
-        </article>`
+            seccion_productos.innerHTML = `<article class="titulo">
+                <h2>No hay resultados para el término: ${palabraBuscadoForm}</h2>
+            </article>`
+
         }
+
+
+
     })
 
     .catch(function (error) {
-        
+
         console.log("Error: " + error)
     })

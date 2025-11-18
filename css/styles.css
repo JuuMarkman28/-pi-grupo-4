@@ -64,6 +64,10 @@ nav{
     padding-left: 30px;
 }
 
+.ul_oculta{
+    display: none;
+}
+
 .ir_form{
     justify-content: end;
 }
@@ -106,6 +110,15 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.seccion_cuerpo_search{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .seccion_gral_productos{

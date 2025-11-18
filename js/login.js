@@ -16,11 +16,7 @@ formulario.addEventListener("submit", function (e) {
         if (longitudContrasenia == 0) {
             alert("Rellenar el campo de contraseña, por favor")
 
-        } else if (0 < longitudContrasenia && longitudContrasenia < 6) {
-            
-            texto_oculto.style.display = "block"
-
-        } else {
+        } else if (longitudContrasenia >= 6){
 
             let userObj= {
                 email: mail.value
@@ -35,4 +31,16 @@ formulario.addEventListener("submit", function (e) {
     }
 
 
+})
+
+formulario.addEventListener("input", function (e) {
+    let longitudContrasenia = contrasenia.value.length
+
+     if (0 < longitudContrasenia && longitudContrasenia < 6) {
+            
+            texto_oculto.style.display = "block"
+
+        } else{
+            texto_oculto.style.display = "none"
+        }
 })
