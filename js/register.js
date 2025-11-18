@@ -4,12 +4,14 @@ let texto_oculto = document.querySelector(".textooculto")
 let texto_oculto2 = document.querySelector(".textooculto2")
 let formulario = document.querySelector(".formularioRegistro")
 let contrasenia2 = document.querySelector(".textocontraseña2")
+let terminos = document.querySelector(".terminos")
 
 formulario.addEventListener("submit", function (e) {
     e.preventDefault()
 
     let longitudContrasenia = contrasenia.value.length
     let longitudMail = mail.value.length
+
 
     if (longitudMail == 0) {
         alert("Rellenar el campo de email, por favor")
@@ -18,7 +20,7 @@ formulario.addEventListener("submit", function (e) {
         if (longitudContrasenia == 0) {
             alert("Rellenar el campo de contraseña, por favor")
 
-        } else if (longitudContrasenia >= 6 && contrasenia.value === contrasenia2.value){
+        } else if (longitudContrasenia >= 6 && contrasenia.value === contrasenia2.value) {
             formulario.submit()
         }
     }
@@ -28,17 +30,17 @@ formulario.addEventListener("submit", function (e) {
 
 formulario.addEventListener("input", function (e) {
     let longitudContrasenia = contrasenia.value.length
-    
+
     if (0 < longitudContrasenia && longitudContrasenia < 6) {
-            
-            texto_oculto.style.display = "block"
 
-        } else if (contrasenia.value !== contrasenia2.value) {
-            texto_oculto.style.display = "none"
-            texto_oculto2.style.display = "block"
+        texto_oculto.style.display = "block"
 
-        } else{
-            texto_oculto2.style.display = "none"
-        }
-    
+    } else if (contrasenia.value !== contrasenia2.value) {
+        texto_oculto.style.display = "none"
+        texto_oculto2.style.display = "block"
+
+    } else {
+        texto_oculto2.style.display = "none"
+    }
+
 })
