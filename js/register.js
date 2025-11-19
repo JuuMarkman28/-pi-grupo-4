@@ -5,6 +5,7 @@ let texto_oculto2 = document.querySelector(".textooculto2")
 let formulario = document.querySelector(".formularioRegistro")
 let contrasenia2 = document.querySelector(".textocontraseña2")
 let terminos = document.querySelector(".terminos")
+let checkbox = document.querySelector("#acepto")
 
 formulario.addEventListener("submit", function (e) {
     e.preventDefault()
@@ -20,7 +21,7 @@ formulario.addEventListener("submit", function (e) {
         if (longitudContrasenia == 0) {
             alert("Rellenar el campo de contraseña, por favor")
 
-        } else if (longitudContrasenia >= 6 && contrasenia.value === contrasenia2.value) {
+        } else if (longitudContrasenia >= 6 && contrasenia.value === contrasenia2.value && checkbox.checked) {
             formulario.submit()
         }
     }
