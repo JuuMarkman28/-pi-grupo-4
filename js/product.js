@@ -26,7 +26,7 @@ fetch(URL)
                 </article>
 
                 <article class="titulo img_product">
-                    <img class="img_detalle" src="${element.images[0]}" alt="galletitas">
+                    <img class="img_detalle" src="${element.images[0]}" alt=${element.title}>
                 </article>
 
 
@@ -46,7 +46,7 @@ fetch(URL)
 
                 <article class="art_subt">
                     <p class="subt_product">Categoria: </p>
-                    <p class="p_product">${element.category}</p>
+                    <a class="a_aside detalle_prod" href="./category.html?NombreCategoria=${element.category}">${element.category}</a>
                 </article>
 
                 <article class="art_subt">
@@ -57,6 +57,7 @@ fetch(URL)
                 <article class="art_subt">
                     <p class="subt_product">Tags: </p>
                     <p class="p_product">${element.tags}</p>
+                </article>
                 </article>`
 
 
