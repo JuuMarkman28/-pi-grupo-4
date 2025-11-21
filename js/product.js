@@ -67,11 +67,9 @@ fetch(URL)
 
         for (i = 0; i < data.reviews.length; i++) {
             const elemento2 = element.reviews[i]
-            // linea 74 consultar con profes 
-            // qué hacemos con las estrellas de los comentarios? if?
 
             let estrellitas = ""
-            for (let i = 0; i < elemento2.rating; i++) {
+            for (i = 0; i < elemento2.rating; i++) {
                 estrellitas += "⭐"
             }
 
@@ -84,7 +82,6 @@ fetch(URL)
         }
 
         seccion2.innerHTML += contenido2
-
 
     })
     .catch(function (error) {

@@ -15,7 +15,6 @@ fetch(URL)
         return response.json()
     })
     .then(function (data) {
-        console.log(data);
 
         let contenido = ""
         const element = data
@@ -26,7 +25,7 @@ fetch(URL)
 
         for (i = 0; i < data.products.length; i++) {
             const element = data.products[i]
-            
+
 
             contenido += `<article class="article_productos">
                     <h4>${element.title}</h4>
@@ -37,10 +36,7 @@ fetch(URL)
                 </article>`
         }
 
-
         seccion.innerHTML = contenido
-
-
 
     })
     .catch(function (error) {

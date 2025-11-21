@@ -23,7 +23,7 @@ fetch(URL)
             </article>`
 
         if (data.products.length >= 1) {
-            for (let i = 0; i < data.products.length; i++) {
+            for (i = 0; i < data.products.length; i++) {
                 const element = data.products[i]
                 contenido += `
                 <article class="article_productos">
@@ -47,11 +47,8 @@ fetch(URL)
 
         }
 
-
-
     })
 
     .catch(function (error) {
-
         console.log("Error: " + error)
     })

@@ -26,7 +26,6 @@ formulario.addEventListener("submit", function (e) {
         }
     }
 
-
 })
 
 formulario.addEventListener("input", function (e) {
