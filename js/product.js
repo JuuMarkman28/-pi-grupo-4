@@ -57,7 +57,6 @@ fetch(URL)
                 <article class="art_subt">
                     <p class="subt_product">Tags: </p>
                     <p class="p_product">${element.tags}</p>
-                </article>
                 </article>`
 
 
